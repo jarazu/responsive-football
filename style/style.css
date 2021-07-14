@@ -1,0 +1,246 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+/* base style  */
+body {
+  font-family: "Poppins", sans-serif;
+  /* background-color: #f3f1ff; */
+  margin: 0;
+}
+header {
+  background-color: #2d25a0;
+}
+.mobile-menu {
+  display: none;
+}
+.header-top-nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+.header-top-menu a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 16px;
+}
+/* .header-top-login a {
+  text-decoration: none;
+  color: #ffffff;
+} */
+header:hover img {
+  transform: scale(1.2);
+  transition: transform 2s ease-in-out;
+}
+.header-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 677px;
+  margin-bottom: 50px;
+}
+.header-content h1 {
+  font-size: 64px;
+  font-weight: bold;
+  color: #ffffff;
+  width: 485px;
+  height: 230px;
+  line-height: 1.3em;
+}
+.header-content a,
+.header-top-login a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #e02c6d;
+  padding: 10px 15px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* main area css */
+main {
+  display: flex;
+  justify-content: center;
+  /* flex dir column */
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 1050px;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.header-banner img {
+  width: 556px;
+  height: 438px;
+}
+.player {
+  margin: 5px;
+  box-shadow: 0px 0px 3px grey;
+  padding: 10px;
+}
+
+.player img {
+  width: 310px;
+  height: 256px;
+}
+.player h1 {
+  font-size: 28px;
+  color: #18191f;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.player p {
+  font-size: 16px;
+  color: #6c6c6c;
+  margin: 10px 0;
+}
+/* newsletter area css */
+.subs-section {
+  /* background-color: #e02c6d; */
+  text-align: center;
+  color: #e02c6d;
+  padding: 25px 0;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.subscribe-area {
+  width: 1050px;
+}
+#email {
+  border: 1px solid #e02c6d;
+  padding: 10px 50px;
+  border-radius: 5px 0 0 5px;
+}
+#submitbtn {
+  background-color: #e02c6d;
+  color: #fff;
+  padding: 10px 40px;
+  border: 1px solid #e02c6d;
+  border-radius: 0 5px 5px 0;
+  font-weight: bold;
+}
+
+/* contact section css */
+.contact-section {
+  background-color: rgb(47 61 163 / 85%);
+  text-align: center;
+  color: #ffffff;
+  padding: 25px 0;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.contact-section h1 {
+  font-size: 50px;
+  margin: 10px;
+}
+.contacts {
+  width: 1050px;
+}
+.contact-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.single-contact {
+  margin: 0 15px;
+}
+.single-contact i {
+  background: #e02c6d;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 27px;
+}
+
+/* footer section css */
+footer {
+  display: flex;
+  justify-content: center;
+}
+.footer-section {
+  width: 483px;
+  margin: 50px 0 30px 0;
+}
+.footer-section img {
+  width: 483px;
+  height: 110px;
+}
+.footer-section i {
+  background-color: #e7e7e8;
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: 700;
+  color: #969bab;
+  font-size: 20px;
+}
+.footer-container {
+  text-align: center;
+}
+
+/* media query mobile */
+@media only screen and (max-width: 688px) {
+  header {
+    width: 687px;
+  }
+
+  .mobile-menu {
+    display: block;
+    color: #ffffff;
+    padding: 20px 0 0 20px;
+  }
+  .header-top {
+    display: none;
+  }
+  .header-area {
+    flex-direction: column;
+    align-items: normal;
+  }
+  .header-content {
+    padding: 0px 20px;
+  }
+  .header-content h1 {
+    font-size: 36px;
+    width: 278px;
+    height: 138px;
+    line-height: 1.4em;
+  }
+  .header-banner img {
+    width: 329px;
+    height: 259px;
+    margin: 55px 12px;
+  }
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-column-gap: 10px;
+    grid-row-gap: 10px; */
+  }
+  .player {
+    /* width: 100%; */
+  }
+
+  .container {
+    width: 100%;
+  }
+  .player h1,
+  p {
+    margin: 5px 0;
+  }
+  .player img {
+    width: 330px;
+  }
+  main {
+    flex-direction: column;
+  }
+
+  .contact-details {
+    /* display: grid; */
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-section img {
+    width: 200px;
+  }
+}
